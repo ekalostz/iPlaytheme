@@ -11,6 +11,11 @@ import AppNavigator from './navigation';
 import { AppStorage } from './services/app-storage.service';
 import { Mapping, Theme, Theming } from './services/theme.service';
 
+import { CommunityIconsPack } from './components/iconCommunity'
+import { FontAwesomeIconsPack } from './components/iconFontAwesome'
+import { MaterialIconsPack } from './components/iconMaterial'
+import { EntypoIconsPack } from './components/iconEntypo'
+
 const loadingTasks: Task[] = [
   // Should be used it when running Expo.
   // In Bare RN Project this is configured by react-native.config.js
@@ -33,7 +38,7 @@ const App = ({ mapping, theme }): React.ReactElement => {
 
   return (
     <React.Fragment>
-      <IconRegistry icons={[EvaIconsPack]}/>
+      <IconRegistry icons={[EvaIconsPack, CommunityIconsPack, FontAwesomeIconsPack, MaterialIconsPack, EntypoIconsPack]}/>
       <AppearanceProvider>
         <ApplicationProvider {...currentMapping} theme={currentTheme}>
           <Theming.MappingContext.Provider value={mappingContext}>

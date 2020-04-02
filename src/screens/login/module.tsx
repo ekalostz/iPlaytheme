@@ -88,7 +88,7 @@ export default ({ navigation }): React.ReactElement => {
             Forgot password?
           </Button>
       </View>
-      <Button size='giant' disabled={!checkUsername || !checkPassword} onPress={onLoginPress}>
+      <Button size='giant' onPress={onLoginPress}>
         SIGN IN
       </Button>
       <Button

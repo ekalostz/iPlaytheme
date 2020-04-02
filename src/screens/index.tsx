@@ -6,5 +6,20 @@ import Opt from './opt-Input'
 import Reset_password from './reset-password'
 import Terms from './terms'
 import Wallet from './wallet'
+import News from './news'
+import Explore from './explore'
+import Account from './account'
 
-export { Login, Forgot_password, Sign_up, Phone_Login, Opt, Reset_password, Terms, Wallet };
+export {
+    Login,
+    Forgot_password,
+    Sign_up,
+    Phone_Login,
+    Opt,
+    Reset_password,
+    Terms,
+    Wallet,
+    News,
+    Explore,
+    Account
+};

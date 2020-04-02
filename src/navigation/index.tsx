@@ -10,7 +10,9 @@ import {
    Reset_password as ResetScreen,
    Terms as TermScreen,
    Wallet as WalletScreen,
-   
+   News as NewsScreen,
+   Explore as ExploreScreen,
+   Account as AccountScreen,
 } from '../screens';
 
 const RootStack = createStackNavigator({
@@ -79,7 +81,33 @@ const RootStack = createStackNavigator({
     }),
     screen: WalletScreen
   },
-  
+  News: {
+    navigationOptions: () => ({
+      title: 'News',
+      headerTitleAlign: 'center',
+      headerShown: true,
+      headerLeft: null
+    }),
+    screen: NewsScreen
+  },
+  Explore: {
+    navigationOptions: () => ({
+      title: 'Explore',
+      headerTitleAlign: 'center',
+      headerShown: true,
+      headerLeft: null
+    }),
+    screen: ExploreScreen
+  },
+  Account: {
+    navigationOptions: () => ({
+      title: 'Account',
+      headerTitleAlign: 'center',
+      headerShown: true,
+      headerLeft: null
+    }),
+    screen: AccountScreen
+  },
 });
 
 const Navigate = createAppContainer(RootStack);

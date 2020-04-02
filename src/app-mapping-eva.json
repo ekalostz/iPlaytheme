@@ -106,7 +106,7 @@
         "default": {
           "mapping": {
             "barStyle": "dark-content",
-            "backgroundColor": "background-basic-color-2"
+            "backgroundColor": "white"
           }
         }
       }

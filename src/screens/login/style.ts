@@ -1,5 +1,4 @@
 import { StyleService } from '@ui-kitten/components';
-import { getStatusBarHeight } from 'react-native-status-bar-height'
 
 
 const themedStyles = StyleService.create({
@@ -8,7 +7,6 @@ const themedStyles = StyleService.create({
     paddingHorizontal: 32,
   },
   headerContainer: {
-    paddingTop: getStatusBarHeight(),
     justifyContent: 'center',
     alignItems: 'center',
     minHeight: 228,
